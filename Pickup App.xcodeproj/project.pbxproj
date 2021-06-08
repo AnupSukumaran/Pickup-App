@@ -15,6 +15,12 @@
 		1812CE9B266F6637007D5D5E /* ModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CE9A266F6637007D5D5E /* ModelResponse.swift */; };
 		1812CE9C266F7FBC007D5D5E /* QizJson.json in Sources */ = {isa = PBXBuildFile; fileRef = 1812CE95266F6180007D5D5E /* QizJson.json */; };
 		1812CE9E266F8B88007D5D5E /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1812CE9D266F8B88007D5D5E /* SDWebImage.framework */; };
+		1812CEA1266FAB98007D5D5E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CEA0266FAB98007D5D5E /* LoginViewController.swift */; };
+		1812CEA5266FB86D007D5D5E /* KeyBrdFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CEA3266FB86C007D5D5E /* KeyBrdFuncs.swift */; };
+		1812CEA6266FB86D007D5D5E /* KeyBrd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CEA4266FB86C007D5D5E /* KeyBrd.swift */; };
+		1812CEA8266FB8F4007D5D5E /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CEA7266FB8F4007D5D5E /* Extension+UITextField.swift */; };
+		1812CEAA266FBC36007D5D5E /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CEA9266FBC35007D5D5E /* UIStoryboard+Ext.swift */; };
+		1812CEAC266FCDF3007D5D5E /* GVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CEAB266FCDF2007D5D5E /* GVars.swift */; };
 		1893C245266DFEA600B03E4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893C244266DFEA600B03E4C /* AppDelegate.swift */; };
 		1893C247266DFEA600B03E4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893C246266DFEA600B03E4C /* SceneDelegate.swift */; };
 		1893C249266DFEA600B03E4C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1893C248266DFEA600B03E4C /* HomeViewController.swift */; };
@@ -60,6 +66,12 @@
 		1812CE95266F6180007D5D5E /* QizJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QizJson.json; sourceTree = "<group>"; };
 		1812CE9A266F6637007D5D5E /* ModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelResponse.swift; sourceTree = "<group>"; };
 		1812CE9D266F8B88007D5D5E /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1812CEA0266FAB98007D5D5E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1812CEA3266FB86C007D5D5E /* KeyBrdFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBrdFuncs.swift; sourceTree = "<group>"; };
+		1812CEA4266FB86C007D5D5E /* KeyBrd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBrd.swift; sourceTree = "<group>"; };
+		1812CEA7266FB8F4007D5D5E /* Extension+UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
+		1812CEA9266FBC35007D5D5E /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
+		1812CEAB266FCDF2007D5D5E /* GVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GVars.swift; sourceTree = "<group>"; };
 		1893C241266DFEA600B03E4C /* Pickup App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pickup App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1893C244266DFEA600B03E4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1893C246266DFEA600B03E4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +153,24 @@
 			path = CustomUIViews;
 			sourceTree = "<group>";
 		};
+		1812CE9F266FAB57007D5D5E /* SideMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				1893C279266E34D800B03E4C /* MenuViewController.swift */,
+				1893C27B266E352500B03E4C /* MenuTableViewController.swift */,
+			);
+			path = SideMenuView;
+			sourceTree = "<group>";
+		};
+		1812CEA2266FB86C007D5D5E /* KeyboardFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1812CEA3266FB86C007D5D5E /* KeyBrdFuncs.swift */,
+				1812CEA4266FB86C007D5D5E /* KeyBrd.swift */,
+			);
+			path = KeyboardFiles;
+			sourceTree = "<group>";
+		};
 		1893C238266DFEA600B03E4C = {
 			isa = PBXGroup;
 			children = (
@@ -166,11 +196,11 @@
 		1893C243266DFEA600B03E4C /* Pickup App */ = {
 			isa = PBXGroup;
 			children = (
+				1893C27F266E3EC700B03E4C /* Exts */,
 				1893C276266E000100B03E4C /* Support */,
 				1893C274266DFFF200B03E4C /* Model */,
 				1893C275266DFFFA00B03E4C /* View */,
 				1893C282266E3FBB00B03E4C /* ViewModel */,
-				1893C27F266E3EC700B03E4C /* Exts */,
 				1893C24D266DFEAE00B03E4C /* Assets.xcassets */,
 				1893C252266DFEAE00B03E4C /* Info.plist */,
 			);
@@ -207,14 +237,14 @@
 		1893C275266DFFFA00B03E4C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1812CE8E266F5352007D5D5E /* CustomUIViews */,
-				1812CE8D266F532F007D5D5E /* HomeView */,
 				1893C24F266DFEAE00B03E4C /* LaunchScreen.storyboard */,
 				1893C24A266DFEA600B03E4C /* Main.storyboard */,
-				1893C279266E34D800B03E4C /* MenuViewController.swift */,
-				1893C27B266E352500B03E4C /* MenuTableViewController.swift */,
-				1893C27D266E39E000B03E4C /* ContainerViewController.swift */,
 				1893C287266E5A8C00B03E4C /* LaunchViewController.swift */,
+				1893C27D266E39E000B03E4C /* ContainerViewController.swift */,
+				1812CE8D266F532F007D5D5E /* HomeView */,
+				1812CE9F266FAB57007D5D5E /* SideMenuView */,
+				1812CE8E266F5352007D5D5E /* CustomUIViews */,
+				1812CEA0266FAB98007D5D5E /* LoginViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,6 +256,8 @@
 				1893C283266E403000B03E4C /* Constants.swift */,
 				1893C244266DFEA600B03E4C /* AppDelegate.swift */,
 				1893C246266DFEA600B03E4C /* SceneDelegate.swift */,
+				1812CEA2266FB86C007D5D5E /* KeyboardFiles */,
+				1812CEAB266FCDF2007D5D5E /* GVars.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -234,7 +266,9 @@
 			isa = PBXGroup;
 			children = (
 				1893C285266E40E400B03E4C /* UIDevice+Ext.swift */,
+				1812CEA7266FB8F4007D5D5E /* Extension+UITextField.swift */,
 				1893C280266E3ED600B03E4C /* NSObject+Ext.swift */,
+				1812CEA9266FBC35007D5D5E /* UIStoryboard+Ext.swift */,
 			);
 			path = Exts;
 			sourceTree = "<group>";
@@ -558,14 +592,20 @@
 				1893C27E266E39E000B03E4C /* ContainerViewController.swift in Sources */,
 				1893C27C266E352500B03E4C /* MenuTableViewController.swift in Sources */,
 				1812CE90266F53DD007D5D5E /* HomeViewTableViewCell.swift in Sources */,
+				1812CEAC266FCDF3007D5D5E /* GVars.swift in Sources */,
 				1893C278266E017900B03E4C /* UIViewCustom.swift in Sources */,
 				1893C245266DFEA600B03E4C /* AppDelegate.swift in Sources */,
 				1812CE9B266F6637007D5D5E /* ModelResponse.swift in Sources */,
 				1812CE92266F57F7007D5D5E /* HomeViewModel.swift in Sources */,
+				1812CEA6266FB86D007D5D5E /* KeyBrd.swift in Sources */,
 				1893C286266E40E400B03E4C /* UIDevice+Ext.swift in Sources */,
+				1812CEA8266FB8F4007D5D5E /* Extension+UITextField.swift in Sources */,
 				1812CE94266F5BCC007D5D5E /* DriveModel.swift in Sources */,
+				1812CEA1266FAB98007D5D5E /* LoginViewController.swift in Sources */,
 				1893C288266E5A8C00B03E4C /* LaunchViewController.swift in Sources */,
+				1812CEAA266FBC36007D5D5E /* UIStoryboard+Ext.swift in Sources */,
 				1893C247266DFEA600B03E4C /* SceneDelegate.swift in Sources */,
+				1812CEA5266FB86D007D5D5E /* KeyBrdFuncs.swift in Sources */,
 				1893C284266E403000B03E4C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

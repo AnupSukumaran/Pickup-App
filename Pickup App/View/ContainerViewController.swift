@@ -15,10 +15,10 @@ class ContainerViewController: SOContainerViewController {
     static  let forPlus_M: CGFloat = 80
     static let forXXsPlus_M: CGFloat = 80
     
-
+    var menuHandler: (() -> ())?
 //    var width: CGFloat = {
 //        let v = UIViewController().adjustViewForIPhonesOnly2(fourAndS: forFourS_M, fiveAndS: forFourS_M, sixSevenEight: forEightAnd6_M, forPlus: forPlus_M, xAndxs: forXXsPlus_M, xr: forXXsPlus_M, xsMax: forXXsPlus_M)
-//        
+//
 //        return v ?? 0
 //    }()
     
@@ -53,7 +53,10 @@ extension ContainerViewController {
     //MARK: SETTING THE SIDE MENU
     func settingSideView() {
         sideMenuWidth = view.frame.width - view.frame.width/4
-        sideViewController = storyboard?.instantiateViewController(withIdentifier: Constants.ViewKeys.menuVC)
+        
+        let sidevc = storyboard?.instantiateViewController(withIdentifier: Constants.ViewKeys.menuVC) as! MenuViewController
+        sidevc.menuHandler = menuHandler
+        sideViewController = sidevc
         
     }
     
@@ -63,6 +66,7 @@ extension ContainerViewController {
         let vc = storyboard?.instantiateViewController(withIdentifier: Constants.ViewKeys.homeVC) as! HomeViewController
         vc.modalPresentationStyle = .fullScreen
         vc.viewModel = HomeViewModel()
+        menuHandler = vc.viewModel?.menuHandler
         topViewController = vc
 
     }

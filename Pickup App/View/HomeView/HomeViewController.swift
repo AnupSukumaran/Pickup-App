@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SASLogger
 
 class HomeViewController: UIViewController {
     
@@ -13,7 +14,7 @@ class HomeViewController: UIViewController {
     
     var viewModel: HomeViewModel? {
         didSet {
-            
+            setHandlers()
         }
     }
 
@@ -23,6 +24,12 @@ class HomeViewController: UIViewController {
         driversTable.delegate = viewModel
         driversTable.dataSource = viewModel
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //callingLoginPage()
+        viewModel?.callingLoginPage()
     }
     
     
@@ -35,3 +42,28 @@ class HomeViewController: UIViewController {
 }
 
 
+extension HomeViewController {
+    
+    func setHandlers() {
+        viewModel?.callLoginView = { [weak self] in
+            guard let vc = self else {return}
+            vc.callingLoginPage()
+        }
+        
+        viewModel?.updateTable = { [weak self] in
+            guard let vc = self else {return}
+            vc.driversTable.reloadData()
+        }
+        
+        viewModel?.menuHandler = { [weak self] in
+            guard let vc = self else {return}
+            vc.viewModel?.callingLoginPage()
+        }
+    }
+    
+    func callingLoginPage() {
+        guard let vc = UIStoryboard.loginViewController() else {return}
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: false, completion: nil)
+    }
+}
