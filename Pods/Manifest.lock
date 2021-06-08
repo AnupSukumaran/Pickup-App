@@ -1,0 +1,51 @@
+PODS:
+  - Alamofire (4.9.1)
+  - GoogleMaps (3.5.0):
+    - GoogleMaps/Maps (= 3.5.0)
+  - GoogleMaps/Base (3.5.0)
+  - GoogleMaps/Maps (3.5.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.5.0):
+    - GoogleMaps/Base (= 3.5.0)
+  - libwebp (1.1.0):
+    - libwebp/demux (= 1.1.0)
+    - libwebp/mux (= 1.1.0)
+    - libwebp/webp (= 1.1.0)
+  - libwebp/demux (1.1.0):
+    - libwebp/webp
+  - libwebp/mux (1.1.0):
+    - libwebp/demux
+  - libwebp/webp (1.1.0)
+  - SDWebImage/Core (4.4.8)
+  - SDWebImage/WebP (4.4.8):
+    - libwebp (< 2.0, >= 0.5)
+    - SDWebImage/Core
+  - SidebarOverlay (4.2.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.0)
+  - GoogleMaps (~> 3.5.0)
+  - GooglePlaces (~> 3.5.0)
+  - SDWebImage/WebP (~> 4.4.7)
+  - SidebarOverlay (~> 4.2.2)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - GoogleMaps
+    - GooglePlaces
+    - libwebp
+    - SDWebImage
+    - SidebarOverlay
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  GoogleMaps: 32ca02de09de357a10ac773f2c70f1986751392d
+  GooglePlaces: be6f19fe8aa6ff0b5bcccfa1b8805cc977ea1450
+  libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SidebarOverlay: a5365455a2f9d54f70d0765764ca1a2806b1b11d
+
+PODFILE CHECKSUM: 73dc0ac741f70544a4248374b7698e41187dfed8
+
+COCOAPODS: 1.9.3
